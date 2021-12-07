@@ -1,4 +1,4 @@
- Bastion Linux VM Input Variables Placeholder file.
+ #Bastion Linux VM Input Variables Placeholder file.
 variable "bastion_service_subnet_name" {
   description = "Bastion Service Subnet Name"
   default = "AzureBastionSubnet"
