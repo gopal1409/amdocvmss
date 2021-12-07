@@ -1,4 +1,4 @@
-/*# Resource-1: Create Public IP Address for Azure Load Balancer
+# Resource-1: Create Public IP Address for Azure Load Balancer
 resource "azurerm_public_ip" "web_lbpublicip" {
   name                = "${local.resource_name_prefix}-lbpublicip"
   resource_group_name = azurerm_resource_group.rg.name
@@ -48,7 +48,7 @@ resource "azurerm_lb_rule" "web_lb_rule_app1" {
   resource_group_name            = azurerm_resource_group.rg.name
 }
 
-
+/*
 # Resource-6: Associate Network Interface and Standard Load Balancer
 # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_interface_backend_address_pool_association
 resource "azurerm_network_interface_backend_address_pool_association" "web_nic_lb_associate" {
